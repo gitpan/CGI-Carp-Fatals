@@ -1,0 +1,28 @@
+CGI::Carp::Fatals version 1.00
+=========================
+
+NAME
+CGI::Carp::Fatals -- fatalsToBrowser on steroids
+
+DESCRIPTION
+This module allows you to add perlinfo information (from HTML::Perlinfo) 
+to fatal errors handled by CGI::Carp's fatalsToBrowser.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make install
+
+DEPENDENCIES
+
+HTML::Perlinfo
+
+COPYRIGHT AND LICENCE
+Copyright (C) 2009 Mike Accardo <mikeaccardo@yahoo.com>
+
+This library is free software; you can redistribute it and/or modify it under 
+the same terms as Perl itself. 
+
