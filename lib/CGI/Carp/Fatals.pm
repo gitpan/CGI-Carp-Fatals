@@ -7,7 +7,7 @@ use HTML::Perlinfo;
 @CGI::Carp::Fatals::ISA = qw(Exporter);
 @CGI::Carp::Fatals::EXPORT = (@CGI::Carp::EXPORT);
 @CGI::Carp::Fatals::EXPORT_OK = qw(fatalsRemix set_message);
-$CGI::Carp::Fatals::VERSION = '0.01';
+$CGI::Carp::Fatals::VERSION = '0.02';
 
 sub fatalsRemix {
 
@@ -50,7 +50,7 @@ CGI::Carp::Fatals - fatalsToBrowser on steroids
 	
 =head1 DESCRIPTION
 
-This module allows you to add perlinfo information (from L<HTML::Perlinfo>)
+This module extends L<CGI::Carp> by adding perlinfo information (from L<HTML::Perlinfo>)
  to fatal errors handled by CGI::Carp's fatalsToBrowser. 
 
 =head1 USAGE/FUNCTIONS
@@ -71,7 +71,7 @@ Please see the L<HTML::Perlinfo> docs for further options and details.
 	
 =head2 Changing the message further
 
-If changing the option to fatalsRemix doesn't satisfy you, you can use the set_message routine that CGI::Carp::Fatals exports from CGI::Carp. Please refer to the documentation on set_message in L<CGI::Carp>. I will not repeat it here. 
+If changing the option to fatalsRemix doesn't satisfy you, you can use the set_message routine that CGI::Carp::Fatals exports from CGI::Carp. Please refer to the documentation of L<CGI::Carp>.  
 
 =head1 What else is included?
 
@@ -79,13 +79,21 @@ Whatever else that CGI::Carp exports (confess, croak, and carp).
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-cgi-fatals@rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Fatals>.
+Please report any bugs or feature requests to C<bug-cgi-carp-fatals@rt.cpan.org>, or through the web interface at
+L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Carp-Fatals>.
 I will be notified, and then you'll automatically be notified of progress on your bug as I make changes.
+
+=head1 REQUIREMENTS
+
+L<HTML::Perlinfo>
 
 =head1 SEE ALSO
 
-L<CGI::Carp>, L<HTML::Perlinfo>, L<CGI::Carp::DebugScreen>, L<CGI::HTMLError>, L<CGI::Carp::Throw>.
+L<CGI::Carp>, 
+L<HTML::Perlinfo>, 
+L<CGI::Carp::DebugScreen>, 
+L<CGI::HTMLError>, 
+L<CGI::Carp::Throw>.
 
 =head1 AUTHOR
 
